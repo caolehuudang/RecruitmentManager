@@ -1,0 +1,238 @@
+nav  {
+    position: fixed;
+    width: 100%;
+    line-height: 50px;
+    z-index: 10;
+}
+
+nav ul {
+    line-height: 50px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    padding-right: 30px;
+    transition: 1s;
+}
+
+nav.black ul {
+    background: rgba(0, 0, 0, 0.9);
+    z-index:3;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px 30px;;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display:inline-block;
+    padding: 0px 8px;
+}
+
+nav.black ul {
+    background: rgba(0, 0, 0, 0.9);
+    z-index:3;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu{
+    font-family: source sans pro;
+    font-weight: lighter;
+}
+
+.cool-link::after{
+    content:'';
+    display:block;
+    width:0;
+    height:2px;
+    background:#fff;
+    margin-top: -15px;
+    transition: width .3s
+}
+
+.cool-link:hover::after{
+    text-decoration: none;
+    width:100%;
+    transition: width .3s
+}
+
+
+.menu-icon {
+    line-height: 60px;
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+.logo {
+    line-height: 60px;
+    position: fixed;
+    float: left;
+    margin: 10px 46px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.cover{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/cover3.jpg);
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+    background-position: top center;	
+}
+
+.cover .text {
+    display: table-cell;
+    vertical-align: middle;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+}
+
+#spin:after {
+    content:"";
+    animation: spin 15s linear infinite;
+    -webkit-animation:  spin 15s linear infinite; 
+    -ms-animation:spin 15s  linear infinite;
+    -moz-animation: spin 15s  linear infinite;
+  }
+  
+  @keyframes spin {
+      0%   {content: 'Khu vực tìm kiếm việc làm cho Dev';}
+      20%  {content: 'Cập nhật nhanh chóng';}
+      40%  {content: 'uy Tín, Chất Lượng';}
+      60%  {content: 'Khu vực tìm kiếm việc làm cho Dev';}
+      80% {content: 'Cập nhật nhanh chóng';}
+      100%{content: 'uy Tín, Chất Lượng'}
+  }
+
+  @media(max-width: 786px) {
+
+    .logo {
+        position: fixed;
+        top: 0;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        max-height: 0px;
+        background: #000;
+    }
+
+    nav.black ul {
+        background: #000;
+    }
+
+    .showing {
+        max-height: 34em;
+    }
+
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+}
+
+
+  /*Footer*/
+  
+.footer-distributed {
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif;
+    padding: 45px 50px;
+}
+
+.footer-distributed .footer-left p {
+    color: #fff;
+    font-size: 14px;
+    margin: 0;
+}
+
+.footer-distributed .footer-right {
+    float: right;
+    margin-top: 6px;
+    max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 3px;
+    transition:all .25s;
+}
+
+.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+
+@media (max-width: 600px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-right {
+        text-align: center;
+    }
+    .footer-distributed .footer-right {
+        float: none;
+        margin: 0 auto 20px;
+    }
+}
+
+/*Cover Login*/
+.coverLogin{
+   height: 100vh;
+   width: 100%;
+   background-image: url(../images/cover3.jpg);
+   background-size: cover;
+   display: table;
+   background-attachment: fixed;
+   background-position: top center;
+  
+}
+
+/*Admin Page*/
+.logoHeader{
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+.shadow{
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
